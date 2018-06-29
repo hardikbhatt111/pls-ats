@@ -1,0 +1,178 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>PremiumLegalStaffing</groupId>
+  <artifactId>PremiumLegalStaffing</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Automation testing of Premium Legal Staffing</name>
+  <description>Automation testing of Premium Legal Staffing</description>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<testXml>testng.xml</testXml>
+		<seleniumver>3.12</seleniumver>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+  <build>
+  
+  
+  
+	<pluginManagement>
+  <plugins>
+   <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+       <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>2.7</version>
+          <dependencies>
+            <dependency>
+                <groupId>org.apache.maven.shared</groupId>
+                <artifactId>maven-filtering</artifactId>
+                <version>1.3</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+      
+</plugins>
+
+</pluginManagement>
+	</build>
+	
+	
+	
+	
+	<dependencies>
+<dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>21.0</version>
+</dependency>
+
+
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.12.0</version>
+</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.mindengine</groupId>
+			<artifactId>galen</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+		</dependency>
+	<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.14</version>
+</dependency>
+                <dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjrt</artifactId>
+                    <version>1.8.3</version>
+                 </dependency>
+                 <dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjtools</artifactId>
+                    <version>1.8.3</version>
+                 </dependency>   
+                 <dependency>
+                     <groupId>com.jcabi</groupId>
+                     <artifactId>jcabi-aspects</artifactId>
+                     <version>0.22.4</version>
+                 </dependency>
+                 <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <version>1.7.12</version>
+                </dependency>
+                
+                   <dependency>
+           <groupId>org.sikuli</groupId>
+           <artifactId>sikuli-api</artifactId>
+           <version>1.2.0</version>
+       </dependency>
+       <dependency>
+           <groupId>io.sterodium</groupId>
+           <artifactId>sterodium-rmi</artifactId>
+           <version>0.3</version>
+       </dependency>
+       <dependency>
+           <groupId>io.sterodium</groupId>
+           <artifactId>sikuli-extension-client</artifactId>
+           <version>0.6</version>
+       </dependency>
+       <dependency>
+           <groupId>io.sterodium</groupId>
+           <artifactId>file-extension-client</artifactId>
+           <version>0.6</version>
+       </dependency>
+       <dependency>
+            <groupId>com.sikulix</groupId>
+            <artifactId>sikulixapi</artifactId>
+            <version>1.1.0</version>
+       </dependency>
+	   <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.5</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>2.9.0</version>
+		</dependency>
+	
+
+</dependencies>
+	
+</project>
